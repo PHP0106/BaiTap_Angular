@@ -1,0 +1,6 @@
+<ng-container *ngIf="!itemGhe.TrangThai; else gheDaDuocChon">
+    <button class="btn btn-secondary  mr-2 mb-2" [ngClass]="{'btn-success':status}" (click)="datGhe()">{{itemGhe.SoGhe}}</button>
+</ng-container>
+<ng-template #gheDaDuocChon>
+    <button class="btn btn-danger mr-2 mb-2" disabled style="cursor: not-allowed;">{{itemGhe.SoGhe}}</button>
+</ng-template>
