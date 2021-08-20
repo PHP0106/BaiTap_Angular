@@ -10,10 +10,10 @@ import { ProductComponent } from '../Product/Product.component';
             <app-product (eventXemChiTiet)="xemChiTiet($event)" [product]="product"></app-product>
         </div>
     </div>
-    <input #idSP class ="form-control" >
     <br>
-    <button></button>
-
+    <input #idSP class ="form-control" >
+    <button class="btn btn-outline-success" data-toggle="modal" data-target="#modelId" (click)="viewDetail(idSP.value)" >View Detail</button>
+    <br>
     <button class="mt-5" (click)="changePrice()">Change Price</button>
     
     <!-- Modal -->

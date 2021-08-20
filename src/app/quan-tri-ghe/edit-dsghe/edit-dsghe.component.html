@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3 mt-3 mb-3 pb-3 bg-primary " style="height: 100%;">
+            <h2 #title class="mt-2 text-white">Thêm Ghế</h2>
+            <input type="text" class="form-control mb-2" #tenGhe placeholder="Tên ghế">
+            <input type="text" class="form-control mb-2" #soGhe placeholder="Số ghế">
+            <input type="text" class="form-control mb-2" #Gia placeholder="Giá">
+            <input type="text" class="form-control mb-2" #trangThai placeholder="Trạng thái">
+            <button class="btn btn-success" (click)="themGheParent(tenGhe.value, soGhe.value, Gia.value, trangThai.value)">Thêm Ghế</button>
+        </div>
+        <div class="col-9">
+            <app-danh-sach-ghe></app-danh-sach-ghe>
+        </div>
+    </div>
+</div>
+
+
+
+
